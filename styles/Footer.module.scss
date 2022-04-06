@@ -1,15 +1,18 @@
 @import "./colors.scss";
 .footerWrapper {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 40px;
-    background-color: $orange;
-    color: $black;
-    font-size: 9px;
-    text-align: center;
-    justify-content: center;
+    margin-top: 70px;
+    footer {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 40px;
+        background-color: $orange;
+        color: $black;
+        font-size: 9px;
+        text-align: center;
+        justify-content: center;
+    }
 }
