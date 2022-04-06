@@ -13,6 +13,7 @@ body {
 }
 
 h1 {
+    display: none;
     color: $logo;
     font-weight: 400;
     font-size: 24px;
@@ -21,6 +22,17 @@ h1 {
 h2 {
     color: $orange;
     font-size: 20px;
+}
+
+h3 {
+    color: $orange;
+    font-size: 16px;
+}
+
+h4 {
+    color: $orange;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 a {
