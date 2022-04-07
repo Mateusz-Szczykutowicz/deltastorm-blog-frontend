@@ -1,9 +1,17 @@
 import { NextPage } from "next";
-import { permissionsI } from "../interfaces/permissions.interface";
+import {
+    PermissionsEnum,
+    permissionsI,
+} from "../interfaces/permissions.interface";
 
-const PermissionsGate: NextPage<permissionsI> = (props) => {
-    if (props.permission == "user") {
-        return <>{props.children}</>;
+const PermissionsGate: NextPage<permissionsI> = ({
+    permission,
+    children,
+    userPermission,
+}) => {
+    console.log("permission :>> ", permission);
+    if (permission === userPermission) {
+        return <>{children}</>;
     }
     return <></>;
 };

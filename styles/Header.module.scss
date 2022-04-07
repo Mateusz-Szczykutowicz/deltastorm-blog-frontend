@@ -19,6 +19,8 @@
         nav {
             display: flex;
             .search {
+                background-color: transparent;
+                border: none;
                 .searchIcon {
                     font-size: 18.5px;
                     color: $orange;
@@ -26,6 +28,8 @@
                 margin-right: 25px;
             }
             .hamburgerMenu {
+                background-color: transparent;
+                border: none;
                 .hamburgerMenuIcon {
                     font-size: 20px;
                     color: $orange;

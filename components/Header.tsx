@@ -14,7 +14,7 @@ const Header: NextPage = () => {
                 <header>
                     <h1>Delta Storm</h1>
                     <Image
-                        src={"/public/logo.svg"}
+                        src={"/images/logo.svg"}
                         width={160}
                         height={35}
                         // layout="fill"
@@ -23,15 +23,20 @@ const Header: NextPage = () => {
                         onClick={() => router.push("/")}
                     ></Image>
                     <nav className={styles.navWrapper}>
-                        <div className={styles.search}>
+                        <button
+                            className={styles.search}
+                            onClick={() => router.push("/search")}
+                        >
                             <FontAwesomeIcon
                                 icon={faMagnifyingGlass}
                                 className={styles.searchIcon}
-                                onClick={() => router.push("/search")}
                             />
-                        </div>
+                        </button>
 
-                        <div className={styles.hamburgerMenu}>
+                        <button
+                            className={styles.hamburgerMenu}
+                            onClick={() => router.push("/menu")}
+                        >
                             <FontAwesomeIcon
                                 icon={faBars}
                                 className={styles.hamburgerMenuIcon}
@@ -47,7 +52,7 @@ const Header: NextPage = () => {
                                     <Link href={"#"}>Zaloguj się</Link>
                                 </li>
                             </ul>
-                        </div>
+                        </button>
                     </nav>
                 </header>
             </div>

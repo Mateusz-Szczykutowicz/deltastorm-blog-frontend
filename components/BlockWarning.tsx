@@ -1,7 +1,7 @@
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "../styles/Warning.module.scss";
-const Warning = () => {
+import styles from "../styles/BlockWarning.module.scss";
+const BlockWarning = () => {
     return (
         <div className={styles.wrapper}>
             <button>
@@ -24,4 +24,4 @@ const Warning = () => {
     );
 };
 
-export default Warning;
+export default BlockWarning;

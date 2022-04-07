@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import NextPageComponent from "../components/NextPage";
 import PermissionsGate from "../components/PermissionsGate";
-import Warning from "../components/Warning";
+import BlockWarning from "../components/BlockWarning";
 import { articlesI } from "../interfaces/articles.interface";
 import { PermissionsEnum } from "../interfaces/permissions.interface";
 import styles from "../styles/Home.module.scss";
@@ -34,8 +34,11 @@ const Home: NextPage<{ articles: Array<articlesI> }> = ({ articles }) => {
             </Head>
             <Header />
             <main className={styles.main}>
-                <PermissionsGate permission={PermissionsEnum.admin}>
-                    <Warning />
+                <PermissionsGate
+                    permission={PermissionsEnum.BLOCKED}
+                    userPermission="blocked"
+                >
+                    <BlockWarning />
                 </PermissionsGate>
 
                 {articlesList}
