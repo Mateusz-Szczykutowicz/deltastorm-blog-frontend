@@ -1,0 +1,36 @@
+@import "./colors.scss";
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .header {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .text {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+    .button {
+        width: 222px;
+        height: 33px;
+        background-color: $orange;
+        border: none;
+        border-radius: 12px;
+        margin-bottom: 150px;
+    }
+
+    .imageError {
+        position: relative;
+        width: 205px;
+        height: 137px;
+    }
+}
